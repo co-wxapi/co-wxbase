@@ -66,7 +66,7 @@ class WxBase {
   }
 
   *jsonRequest(url, method, args){
-    var result = yield co_request({uri:url, method: method, form:args, json: true, timeout: this.timeout});
+    var result = yield co_request({uri:url, method: method, body:args, json: true, timeout: this.timeout});
     if ( result.err ) {
       var resp = result.resp;
       if ( resp && resp.statusCode != 200 ) {

@@ -9,7 +9,14 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "request": "^2.72.0",
-    "superagent": "^2.0.0"
-  }
+    "co-wxsign": "^0.1.0",
+    "request": "^2.72.0"
+  },
+  "engines": {
+    "node": ">= 4.4.0"
+  },
+  "files": [
+    "lib",
+    "*.js"
+  ]
 }
