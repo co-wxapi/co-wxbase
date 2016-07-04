@@ -28,7 +28,7 @@ class TokenProvider {
 class WxBase {
   constructor(args){
     var appId = args.appId || args.appid || args.app_id;
-    var appSecret = args.appSecret || args.app_secret;
+    var appSecret = args.appSecret || args.app_secret || args.appkey;
     if ( !appId || !appSecret )
       throw new Error('APPID & APPSECRET must not be empty!');
     this.appId = appId;

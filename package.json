@@ -1,6 +1,6 @@
 {
   "name": "co-wxbase",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "wechat api base class",
   "main": "index.js",
   "scripts": {
