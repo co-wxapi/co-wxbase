@@ -61,7 +61,12 @@ class WxBase {
       }
     }
     else {
-      return result.body;
+      var body = result.body;
+      if ( extra && extra.withHeaders ) {
+        var resp = result.resp;
+        body.headers = resp.headers;
+      }
+      return body;
     }
   }
 
