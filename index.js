@@ -35,6 +35,7 @@ class WxBase {
     this.appSecret = appSecret;
     this.timeout = args.timeout || DEFAULT_TIMEOUT;
     this.provider = null;
+    this._request = request;
   }
 
   setTokenProvider(provider){
